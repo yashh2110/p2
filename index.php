@@ -69,7 +69,7 @@ include ("dbconn.php");
           <a href="#homec" data-slide="next" class="carousel-control-next"> <span class="carousel-control-next-icon"></span> </a>
         </div>
 
-      </div>
+      </div> 
 
     <div class="topnav" id="myTopnav">
       <a href="#call" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1500" data-aos-easing="ease-in-sine" class="active bg-primary">CallUs</a>
