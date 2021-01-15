@@ -43,7 +43,7 @@ include ("dbconn.php");
           </ul>
           <div class="carousel-inner">
             <?php
-            $sql ="SELECT * FROM smallhome ORDER BY `date` DESC";
+            $sql ="SELECT * FROM smallhome ORDER BY 'date' DESC";
             $result = mysqli_query($conn,$sql);
             $count="";
             while ($row = mysqli_fetch_assoc($result)) {
@@ -97,7 +97,7 @@ include ("dbconn.php");
     <div class="para">
       <h1 class="ml1 container-fluid-sm" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1400" >
         <span class="text-wrapper">
-          <span class="letters">Providing Excellent & Expertized Service Over <b style="background:#e6e6ff color:white">23 YEARS</b> </span>
+        <p style="color:#054381;">Providing Excellent & Expertized Service Over <b style="background:#e6e6ff color:white">23 YEARS</b><span class="letters">   </span></p>
         </span>
       </h1>
       <div class="caption"  data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1400" >
@@ -114,7 +114,7 @@ include ("dbconn.php");
         <span class="letters">Let us See The World Clear with Nationalopticals </span>
       </span>
     </h1>
-      <a  href="#products" data-aos="fade-left" style="transition-delay: 6s;" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="1400" href="#" class="btn btn-primary makeapp p-2 m-2">Products</a>
+     
     <div  class="godown">
       <a href="#products"><i class="fas fa-angle-down"></i></a>
 
@@ -550,48 +550,49 @@ include ("dbconn.php");
       <div class="careheading">
         <h1 class="text-center text-primary mt-4">Eye checkup</h1>
         <p class="text-dark text-center" style="font-family:Helvetica;width:60%;position:relative;margin-left:auto;margin-right:auto">We have Expertized eye checkup.We are Providing our service over 23 years with out fail.We have highly qualified staff for the checkups.Your satisfaction is over first priority.Let us make the world crystel clear</p>
-        <a href="tel:+919390307908" style="font-size:0.8em;position:relative;left:40%;" class="btn btn-primary text-white text-center p-2">Call us</a>
+        <a href="tel:+919390307908" style="font-size:1.1em;position:relative;left:50%;transform:translateX(-50%)" class="btn btn-primary text-white text-center p-2">Call us</a>
       </div>
     </section>
     <section id="location" class="locationsec">
-      <div class="container-sm">
-        <h3 class="text-center locationheading" data-aos="fade-down">Location</h3>
-        <div class="input-group locationbox">
-          <ul class="address">
-            <li id="add1"  data-aos="fade-left"  data-aos-duration="500">Branch1</li>
-            <li id="add2"  data-aos="fade-left"  data-aos-duration="700">Branch2</li>
-          </ul>
-          <div id="map1" class="iframe">
+      <h4 class="locationheading text-center" data-aos="fade-up" data-aos-duration="1000">Location</h4>
+      <div class="container-sm locationdiv">
+          <div id="map1" data-aos="fade-up" data-aos-duration="1000" class="iframe">
             <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15668.174401949896!2d78.06776368197585!3d10.960079175763148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2fafff8a3e35%3A0x871e5ff3f9150506!2sNational%20Opticals!5e0!3m2!1sen!2sin!4v1598711496494!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
           <div class="iframe" id="map2">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.080384564336!2d78.0018031146257!3d11.10738689209747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babd4b160fb40d7%3A0x73708bd97bd55826!2sNational%20Opticals!5e0!3m2!1sen!2sin!4v1598714045865!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
-        </div>
+          <div class="addop text-center">
+          <span id="add1" data-aos="fade-right" data-aos-duration="1000" class="text-center">Branch 1</span>
+          <span id="add2" data-aos="fade-left" data-aos-duration="1000" class="text-center">Branch 2</span>
+          </div>
+          
       </div>
 
     </section>
-    <section id="call" class="call">
+    <br>
+    <br>
+    <section id="call" class="callsec">
       <h2 class="text-primary text-center pt-3" style="font-family: 'Orbitron', sans-serif;">Featured Brands</h2>
-      <div class="brands input-group">
-
-        <img class="p-2"src="./images/brand1.jpeg" alt="">
-        <img class="p-2"src="./images/brand2.jpeg" alt="">
-        <img class="p-2"src="./images/brand3.jpeg" alt="">
-        <img class="p-2"src="./images/brand4.jpeg" alt="">
-
-      </div>
       <div class="container-sm">
-        <div data-aos="fade-left"  data-aos-duration="1000" class="callimg">
-          <!-- <img src="./images/pic1.jpg" alt=""> -->
+        <div class="brands">
+          <img class="p-2" src="./images/brand1.jpeg" alt="">
+          <img class="p-2" src="./images/brand2.jpeg" alt="">
+          <img class="p-2" src="./images/brand3.jpeg" alt="">
+          <img class="p-2" src="./images/brand4.jpeg" alt="">
         </div>
-        <div class="callus">
-          <p></p>
-          <a href="tel:+919390307908" class="btn  text-white p-2 m-2"><i class="fas fa-phone-alt"></i> Call Now</a>
+        <div class="text-center"> 
+        <p class="text-center text-primary" style="font-size:1.7em;font-weight:600"><span class="text-dark">Mobile:</span> 9390307908</p>
+        <a href="tel:+919390307908" class="text-center call"><i class="fas fa-phone-alt"></i> Call Now</a>
         </div>
       </div>
-
     </section>
+    <br>
+    <br>
+    <br>
+    <div>
+      <p class="text-center text-secondary">Copyright © 2021 All rights reserved</p>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
   </body>
