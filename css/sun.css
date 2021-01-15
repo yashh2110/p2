@@ -1,0 +1,168 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+.logo{
+  position: absolute;
+  top:0;
+  right:10px;
+  color:#196666;
+  font-weight: 700;
+  float: right;
+  margin:10px;
+  padding:10px;
+  font-family: 'Baloo Tamma 2', cursive;
+  /* font-family: 'Dancing Script', cursive; */
+  z-index: 2;
+  text-shadow:0 3px 5px white,0 3px 10px white,0 3px 20px white,0 3px 40px white;
+  width:400px; height:auto
+}
+
+.div{
+  position: relative;
+  width:300px;
+  height: 200px;
+  display: inline-block;
+  margin:5px;
+
+}
+.div img{
+  position: relative;
+  width:100%;
+  height:100%;
+}
+.head{
+  height:50%;
+  background-color: white
+}
+.sunh{
+  position: relative;
+  top:100px;
+  color:#003366;
+  font-family: 'Audiowide', cursive;
+}
+.home{
+  font-size: 1.6em;
+
+  position: absolute;
+  top:0
+}
+.home:hover{
+  color:blue;
+  transition: 0.4s
+}
+.godown{
+  width:100%;
+  position: relative;
+  color:#003366;
+  font-size: 2rem;
+  top: 200px;
+}
+.items{
+  padding:50px;
+
+}
+.foot{
+  padding:20px;
+  align-items: center;
+}
+.foot img{
+  width:300px;
+}
+.foot h2{
+  font-family: 'Audiowide', cursive;
+
+}
+.foot a{
+  position: absolute;
+  height:40px;
+  right:140px;
+  bottom:10px;
+}
+.foot a:hover{
+  background-color:#007acc
+}
+
+@media screen and (max-width:1500px){
+.foot img{
+  width:250px
+}
+.foot h2{
+  font-size: 1.5em
+}
+.foot a{
+right:200px;
+}
+}
+@media screen and (max-width:1000px){
+.foot img{
+  width:200px;
+}
+.foot h2{
+  font-size: 1.3em
+}
+.foot a{
+right:-40px;
+bottom:35px;
+}
+.sunh{
+  position: relative;
+  top:150px;
+  color:#003366;
+  font-family: 'Audiowide', cursive;
+}
+}
+@media screen and (max-width:700px){
+  .foot{
+    padding: 30px;
+    padding-bottom: 40px
+  }
+.foot img{
+  width:150px;
+}
+.foot h2{
+  font-size: 1em
+}
+.foot a{
+bottom:5px;
+}
+}
+@media screen and (max-width:500px) {
+.foot img{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.foot h2{
+
+}
+.foot a{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sunh{
+  position: relative;
+  top:170px;
+  color:#003366;
+  font-family: 'Audiowide', cursive;
+}
+.logo{
+  width:300px;
+  right:0;
+}
+}
+@media screen and (max-width:300px){
+.foot img{
+}
+.foot h2{
+}
+.foot a{
+
+}
+}
